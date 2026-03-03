@@ -91,7 +91,7 @@ export default function Hero() {
                     >
                         <a
                             href="/cv.pdf"
-                            download
+                            download="CV_Diego_Suarez.pdf"
                             className="inline-flex items-center gap-3 px-8 py-4 text-base font-semibold rounded-full bg-gradient-to-r from-primary-light to-accent text-white hover:shadow-xl hover:shadow-accent/20 hover:scale-105 transition-all duration-300"
                         >
                             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
