@@ -33,7 +33,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <a href="#hero">
-                    <img src="/Logo.png" alt="Diego Suárez" className="h-20" style={{ filter: 'brightness(0) invert(1)' }} />
+                    <img src="/rocket-svgrepo-com.svg" alt="Diego Suárez" className="h-10 sm:h-12" style={{ filter: 'brightness(0) invert(1)' }} />
                 </a>
 
                 {/* Desktop Links */}
