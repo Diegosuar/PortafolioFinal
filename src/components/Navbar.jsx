@@ -53,11 +53,12 @@ export default function Navbar() {
 
                 {/* CTA Desktop */}
                 <a
-                    href="/cv.pdf"
-                    download
+                    href="https://www.linkedin.com/in/diego-su%C3%A1rez-obando/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-full bg-gradient-to-r from-primary-light to-accent text-white hover:shadow-lg hover:shadow-accent/25 transition-all duration-300"
                 >
-                    Descargar CV
+                    LinkedIn
                 </a>
 
                 {/* Mobile Hamburger */}
@@ -109,11 +110,12 @@ export default function Navbar() {
                             ))}
                             <li className="pt-2">
                                 <a
-                                    href="/cv.pdf"
-                                    download
+                                    href="https://www.linkedin.com/in/diego-su%C3%A1rez-obando/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-full bg-gradient-to-r from-primary-light to-accent text-white"
                                 >
-                                    Descargar CV
+                                    LinkedIn
                                 </a>
                             </li>
                         </ul>
