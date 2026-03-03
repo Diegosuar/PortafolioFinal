@@ -59,42 +59,38 @@ function OrbitingItem({ cert, index, total, radius }) {
 }
 
 function CertCarousel() {
-    const doubled = [...certifications, ...certifications]
-
     return (
-        <div className="overflow-hidden w-full">
-            <motion.div
-                className="flex gap-4"
-                animate={{ x: ['0%', '-50%'] }}
-                transition={{
-                    x: {
-                        duration: 30,
-                        repeat: Infinity,
-                        ease: 'linear',
-                    },
-                }}
+        <div className="w-full">
+            <style>{`
+                .hide-scrollbar::-webkit-scrollbar {
+                    display: none;
+                }
+            `}</style>
+            <div
+                className="flex overflow-x-auto gap-4 px-4 pb-8 snap-x snap-mandatory hide-scrollbar"
+                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}
             >
-                {doubled.map((cert, i) => (
+                {certifications.map((cert, i) => (
                     <a
                         key={`${cert.name}-${i}`}
                         href={cert.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="glass rounded-2xl p-5 flex flex-col items-center gap-3 min-w-[160px] sm:min-w-[180px] cursor-pointer group card-hover flex-shrink-0 no-underline text-white"
+                        className="glass rounded-2xl p-5 flex flex-col items-center gap-3 min-w-[200px] cursor-pointer group card-hover flex-shrink-0 no-underline text-white snap-center"
                     >
                         <div
-                            className="w-12 h-12 rounded-xl flex items-center justify-center transition-transform group-hover:scale-110"
+                            className="w-14 h-14 rounded-xl flex items-center justify-center transition-transform group-hover:scale-110"
                             style={{ backgroundColor: `${cert.color}15` }}
                         >
-                            <cert.icon className="text-2xl" style={{ color: cert.color }} />
+                            <cert.icon className="text-3xl" style={{ color: cert.color }} />
                         </div>
                         <div className="text-center">
-                            <p className="text-xs sm:text-sm font-semibold leading-tight">{cert.name}</p>
-                            <p className="text-[10px] sm:text-xs text-muted mt-1">{cert.provider}</p>
+                            <p className="text-sm font-semibold leading-tight">{cert.name}</p>
+                            <p className="text-xs text-muted mt-1">{cert.provider}</p>
                         </div>
                     </a>
                 ))}
-            </motion.div>
+            </div>
         </div>
     )
 }
