@@ -63,17 +63,17 @@ export default function Hero() {
                         Ingeniero Informático
                     </motion.p>
 
-                    <div className="flex items-center gap-6 mb-6">
-                        <img
-                            src="/DiegoFoto.png"
-                            alt="Diego Suárez"
-                            className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-accent/30 shadow-lg shadow-accent/20"
-                        />
-                        <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight tracking-tight">
+                    <div className="flex flex-col sm:flex-row items-center sm:items-center gap-8 mb-6">
+                        <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight tracking-tight text-center sm:text-left">
                             Diego
                             <br />
                             <span className="gradient-text">Suárez</span>
                         </h1>
+                        <img
+                            src="/DiegoFoto.png"
+                            alt="Diego Suárez"
+                            className="bg-[#0a0e27] w-36 h-36 sm:w-44 sm:h-44 lg:w-52 lg:h-52 rounded-full object-cover border-4 border-accent/40 shadow-xl shadow-accent/20"
+                        />
                     </div>
 
                     <div className="text-xl sm:text-2xl lg:text-3xl font-light text-muted mb-8">
