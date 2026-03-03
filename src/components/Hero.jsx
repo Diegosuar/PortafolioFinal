@@ -101,6 +101,16 @@ export default function Hero() {
                             LinkedIn
                         </a>
                         <a
+                            href="/cv.pdf"
+                            download
+                            className="inline-flex items-center gap-3 px-8 py-4 text-base font-semibold rounded-full bg-gradient-to-r from-primary-light to-accent text-white hover:shadow-xl hover:shadow-accent/20 hover:scale-105 transition-all duration-300"
+                        >
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 18h16" />
+                            </svg>
+                            Descargar CV
+                        </a>
+                        <a
                             href="#contact"
                             className="inline-flex items-center gap-3 px-8 py-4 text-base font-semibold rounded-full border border-white/20 text-white hover:bg-white/5 hover:border-accent/50 transition-all duration-300"
                         >
