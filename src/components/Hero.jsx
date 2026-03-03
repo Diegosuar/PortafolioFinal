@@ -90,7 +90,7 @@ export default function Hero() {
                         className="flex flex-wrap gap-4"
                     >
                         <a
-                            href="/cv"
+                            href="/cv.txt"
                             download
                             className="inline-flex items-center gap-3 px-8 py-4 text-base font-semibold rounded-full bg-gradient-to-r from-primary-light to-accent text-white hover:shadow-xl hover:shadow-accent/20 hover:scale-105 transition-all duration-300"
                         >
